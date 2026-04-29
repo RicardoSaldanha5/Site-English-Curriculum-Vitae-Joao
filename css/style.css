@@ -608,44 +608,57 @@ a {
     font-size: 0.9375rem;
 }
 
-.about-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
-}
+/* ========================================
+   STAT CARDS – CORRIGIDOS
+   ======================================== */
 
-.stat-card {
-    background: linear-gradient(135deg, var(--primary-main), var(--primary-light));
+/* Estilo base dos cartões de estatísticas */
+.stat-card,
+.stat-link {
+    background: white; /* ← Fundo BRANCO */
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     text-align: center;
-    color: white;
+    color: var(--text-primary);
     box-shadow: var(--shadow-lg);
-    transition: 300ms ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    text-decoration: none;
 }
 
-.stat-card:hover {
+.stat-card:hover,
+.stat-link:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-2xl);
 }
 
-.stat-card i {
+/* Estilo interno — ícone, número e texto */
+.stat-card i,
+.stat-link i {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
-    opacity: 0.95;
+    color: var(--primary-main);
 }
 
-.stat-number {
+.stat-card .stat-number,
+.stat-link .stat-number {
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: var(--spacing-xs);
-    color: white;
+    color: var(--primary-main);
 }
 
-.stat-card p {
+.stat-card p,
+.stat-link p {
     font-size: 0.9375rem;
     opacity: 0.9;
+    margin: 0;
+    color: var(--text-secondary);
 }
 
 /* ========================================

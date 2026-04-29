@@ -26,12 +26,12 @@
 </head>
 <body>
     <!-- Navigation -->
-<nav class="navbar" id="navbar">
-    <div class="container">
-        <!-- Logo -->
-        <div class="nav-brand">
-            <span class="logo-text">JS</span>
-        </div>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="nav-brand">
+                <span class="logo-text">JS</span>
+            </div>
 
             <!-- Main menu (hidden on mobile) -->
             <ul class="nav-menu" id="navMenu">
@@ -45,25 +45,25 @@
             </ul>
 
             <!-- Ações à direita: globo + toggle -->
-        <div class="nav-actions">
-            <!-- Botão de idioma -->
-            <div class="lang-toggle-wrapper" aria-label="Switch to English">
-                <a href="https://ricardosaldanha5.github.io/Site-Curriculum-Vitae-Joao/" class="lang-toggle">
-                    <i class="fas fa-globe-americas"></i>
-                </a>
-                <span class="lang-tooltip">Português</span>
-            </div>
+            <div class="nav-actions">
+                <!-- Botão de idioma -->
+                <div class="lang-toggle-wrapper" aria-label="Switch to Portuguese">
+                    <a href="https://ricardosaldanha5.github.io/Site-Curriculum-Vitae-Joao/" class="lang-toggle">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <span class="lang-tooltip">Português</span>
+                </div>
 
-            <!-- Botão dos 3 riscos -->
-            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <!-- Botão dos 3 riscos -->
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-    </div>
-</nav>
-    https://ricardosaldanha5.github.io/Site-Curriculum-Vitae-Joao/
+    </nav>
+
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
@@ -129,38 +129,34 @@
                     </div>
                 </div>
                 <div class="about-stats" data-aos="fade-left">
-                    <div class="stat-card">
+                    <!-- Academic Qualifications -->
+                    <a href="#formacao" class="stat-card stat-link">
                         <i class="fas fa-award"></i>
                         <h3 class="stat-number" data-target="2">0</h3>
-                        <div class="about-stats" data-aos="fade-left">
-    <!-- Academic Qualifications -->
-    <a href="#formacao" class="stat-card stat-link">
-        <i class="fas fa-award"></i>
-        <h3 class="stat-number" data-target="2">0</h3>
-        <p>Academic Qualifications</p>
-    </a>
+                        <p>Academic Qualifications</p>
+                    </a>
 
-    <!-- Professional Experiences -->
-    <a href="#experiencia" class="stat-card stat-link">
-        <i class="fas fa-briefcase"></i>
-        <h3 class="stat-number" data-target="10">0</h3>
-        <p>Professional Experiences</p>
-    </a>
+                    <!-- Professional Experiences -->
+                    <a href="#experiencia" class="stat-card stat-link">
+                        <i class="fas fa-briefcase"></i>
+                        <h3 class="stat-number" data-target="10">0</h3>
+                        <p>Professional Experiences</p>
+                    </a>
 
-    <!-- Languages -->
-    <a href="#competencias" class="stat-card stat-link">
-        <i class="fas fa-language"></i>
-        <h3 class="stat-number" data-target="3">0</h3>
-        <p>Languages</p>
-    </a>
+                    <!-- Languages -->
+                    <a href="#competencias" class="stat-card stat-link">
+                        <i class="fas fa-language"></i>
+                        <h3 class="stat-number" data-target="3">0</h3>
+                        <p>Languages</p>
+                    </a>
 
-    <!-- OPP Registration (not clickable) -->
-    <div class="stat-card">
-        <i class="fas fa-id-badge"></i>
-        <h3 class="stat-number" data-target="1">0</h3>
-        <p>OPP Registration: 022686</p>
-    </div>
-</div>
+                    <!-- OPP Registration (not clickable) -->
+                    <div class="stat-card">
+                        <i class="fas fa-id-badge"></i>
+                        <h3 class="stat-number" data-target="1">0</h3>
+                        <p>OPP Registration: 022686</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -173,7 +169,6 @@
                 <h2 class="section-title">Education & Qualifications</h2>
             </div>
             <div class="timeline">
-
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -205,7 +200,6 @@
                 <h2 class="section-title">Work Experience</h2>
             </div>
             <div class="experience-grid">
-
                 <div class="experience-card card-highlight" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-icon healthcare-icon">
                         <i class="fas fa-user-md"></i>
@@ -245,7 +239,6 @@
                     </p>
                 </div>
 
-                <!-- Logistics Technician -->
                 <div class="experience-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="card-icon logistics-icon">
                         <i class="fas fa-boxes-stacked"></i>
@@ -259,7 +252,6 @@
                     </p>
                 </div>
 
-                <!-- Educator / Tutor – Children and Adolescents -->
                 <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-icon educator-icon">
                         <i class="fas fa-user-graduate"></i>
@@ -460,7 +452,6 @@
                     </div>
                 </div>
 
-                <!-- Philosophy, Spirituality & Astrology -->
                 <div class="project-card" data-aos="flip-left" data-aos-delay="300">
                     <div class="project-image philosophy-bg">
                         <i class="fas fa-infinity"></i>
@@ -585,10 +576,10 @@
     </button>
 
     <!-- AOS Animation Library -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-<!-- Custom JavaScript -->
-<script src="js/main.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
