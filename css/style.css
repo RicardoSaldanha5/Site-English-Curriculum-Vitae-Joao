@@ -615,7 +615,7 @@ a {
 /* Estilo base dos cartões de estatísticas */
 .stat-card,
 .stat-link {
-    background: rgb(145, 240, 132); /* ← Fundo BRANCO */
+    background: white; /* ← Fundo BRANCO */
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     text-align: center;
@@ -641,7 +641,7 @@ a {
 .stat-link i {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
-    color: var(--primary-main);
+    color: var(#9af0bb);
 }
 
 .stat-card .stat-number,
@@ -650,7 +650,7 @@ a {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: var(--spacing-xs);
-    color: var(--primary-main);
+    color: var(#9af0bb);
 }
 
 .stat-card p,
