@@ -925,7 +925,11 @@ a {
 .skills-section {
     background-color: var(--bg-light);
 }
-
+.skills-category p {
+    margin-top: var(--spacing-md);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
 .skills-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
