@@ -607,15 +607,22 @@ a {
     color: var(--text-muted);
     font-size: 0.9375rem;
 }
-
 /* ========================================
-   STAT CARDS – CORRIGIDOS
+   STAT CARDS – CORRIGIDOS E ESPAÇADOS
    ======================================== */
 
-/* Estilo base dos cartões de estatísticas */
+/* Container dos cartões – controla o espaçamento ENTRE eles */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-xl); /* ← espaço entre os cartões */
+    margin-top: var(--spacing-2xl);
+}
+
+/* Estilo base dos cartões */
 .stat-card,
 .stat-link {
-    background: white; /* ← Fundo BRANCO */
+    background: white;
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     text-align: center;
@@ -636,23 +643,28 @@ a {
     box-shadow: var(--shadow-2xl);
 }
 
-/* Estilo interno — ícone, número e texto */
+/* Ícone e número – cor VERDE SUAVE */
+.stat-card i,
+.stat-link i,
+.stat-card .stat-number,
+.stat-link .stat-number {
+    color: #9af0bb; /* verde claro suave – ajusta se quiseres outro tom */
+}
+
 .stat-card i,
 .stat-link i {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
-    color: var(#9af0bb);
 }
 
-.stat-card .stat-number,
-.stat-link .stat-number {
+.stat-number {
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: var(--spacing-xs);
-    color: var(#9af0bb);
 }
 
+/* Texto descritivo */
 .stat-card p,
 .stat-link p {
     font-size: 0.9375rem;
@@ -660,7 +672,6 @@ a {
     margin: 0;
     color: var(--text-secondary);
 }
-
 /* ========================================
    EDUCATION SECTION (TIMELINE)
    ======================================== */
