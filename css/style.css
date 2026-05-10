@@ -615,7 +615,7 @@ a {
 /* Estilo base dos cartões de estatísticas */
 .stat-card,
 .stat-link {
-    background: white; /* ← Fundo BRANCO */
+    background: rgb(145, 240, 132); /* ← Fundo BRANCO */
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     text-align: center;
